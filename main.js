@@ -1,10 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
+function intro_page()
+{
+    window.location(index.html)
+}
 
-    var myButton = document.getElementById("myButton");
+function causes_page()
+{
+    windown.location(causes.html)
+}
 
-    if (myButton) {
-        myButton.addEventListener("click", function () {
-            alert("Button clicked!")
-        });
-    }
-});
+function impact_page()
+{
+    window,location(impact.html)
+}
+
+function conclusion_page()
+{
+    window.location(conclusion.html)
+}

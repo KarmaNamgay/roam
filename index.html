@@ -1,78 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <script src="main.js"></script>
-
+    <link rel="stylesheet" href="styles.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Fall of Rome</title>
-    <style>
-         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(144, 12, 63);
-        }
-
-        header {
-            background-color: rgb(199, 0, 57);
-            color: rgb(248, 222, 34);
-            padding: 1em;
-            text-align: center;
-        }
-
-        nav {
-            background-color: rgb(249, 76, 16);
-            overflow: hidden;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: rgb(248, 222, 34);
-            text-align: center;
-            padding: 14px 80px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: rgb(248, 222, 34);
-            color: rgb(249, 76, 16);
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgb(248, 222, 34);
-            box-shadow: 0 0 10px rgb(144, 12, 63);
-        }
-
-        h1,h2 {
-            color: rgb(249, 76, 16);
-        }
-
-        p {
-            line-height: 1.6;
-            color: rgb(199, 0, 57);
-        }
-
-        footer {
-            background-color: rgb(249, 76, 16);
-            color: rgb(248, 222, 34);
-            text-align: center;
-            padding: 1em 0;
-        }
-        .intro, .causes, .impact{
-            padding-right: 10px;
-        }
-        img{
-            height: 200px;
-            width: 300px;
-        }
-    </style>
 </head>
 
 <body>
@@ -80,12 +13,69 @@
     <header>
         <h1>The Fall of Rome</h1>
     </header>
+
+    <style>
+        body {
+            background-color: #d5d5d5;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        header {
+            background-color: #949494;
+            color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #444;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 600px) {
+            nav {
+                text-align: center;
+            }
+        
+            nav li {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+        </style>
+        
+
     <nav>
-        <a id="intro" href="#introduction">Introduction</a>
-        <a id="causes" href="#causes">Causes of the Fall</a>
-        <a id="impact" href="#impact">Impact on Civilization</a>
-        <a id="conclusion" herf="#comclusion">Conclusion</a>
-        <a id="photos" href="#photos">Photos</a>
+        <button id="intro" onclick="intro_page()">Introduction</a>
+        <button id="causes" onclick="causes_page()">Causes of the Fall</a>
+        <button id="impact" onclick="impact_page()">Impact on Civilization</a>
+        <button id="conclusion" onclick="conclusion_page()">Conclusion</a>
     </nav>
 
     <main>
@@ -97,42 +87,6 @@
                 The fall of Rome had profound consequences, ushering in a period of decentralization, cultural transformation with the spread of Christianity, and the transition from ancient to medieval times, while the Eastern Roman Empire, or Byzantine Empire, continued for centuries until the fall of Constantinople in 1453.
             </p>
         </section>
-
-        <section id="causes">
-            <h2>Causes of the Fall</h2>
-            <p>
-                Rome fell due to a combination of internal and external factors that eroded the once-mighty empire over the course of several centuries. Internally, political instability and frequent changes in leadership, economic decline marked by issues such as excessive taxation and reliance on slave labor, and social unrest contributed to a weakened governance structure. Military challenges arose from the relentless invasions of various barbarian groups and the overextension of Roman borders.
-                The division of the empire into Eastern and Western parts by Emperor Diocletian, while initially aimed at improving administration, led to a vulnerability in the West.
-                The sackings by Visigoths, Vandals, and other invaders, coupled with internal strife and the inability to address the empire's systemic problems effectively, ultimately culminated in the deposition of the last Western Roman emperor in 476 CE.
-                 The fall of Rome not only marked the end of ancient Roman dominance but also had profound and lasting consequences on the political, cultural, and social landscape of Western civilization.
-            </p>
-        </section>
-
-        <section id="impact">
-            <h2>The impact</h2>
-            <p>
-                The fall of Rome had far-reaching and enduring impacts on various aspects of Western civilization, influencing political, social, economic, and cultural developments for centuries. One of the immediate consequences was the fragmentation of political power in Europe, leading to the emergence of smaller, decentralized entities. The decline of centralized governance resulted in a power vacuum that contributed to the feudal system, characterized by local lords and manors.
-                Economically, the fall of Rome marked a period of disruption and decline. The Roman economy, once characterized by a sophisticated infrastructure and trade networks, faced challenges as a result of invasions, reduced agricultural productivity, and the collapse of long-distance trade routes. The decline in economic stability contributed to the overall shift from a monetized and urbanized society to a more agrarian and localized one.
-                Socially, the fall of Rome led to significant demographic changes. The decline in population, urbanization, and the disintegration of the Roman social structure contributed to the rise of medieval feudalism. Additionally, the spread of Christianity, which had become the state religion under Constantine, played a crucial role in shaping the cultural and moral values of the post-Roman world.
-                Culturally, the fall of Rome marked the transition from ancient to medieval times. The loss of the classical knowledge and achievements of Rome was partially mitigated by the efforts of monasteries and scholars in preserving and transmitting knowledge. The period following the fall of Rome is often referred to as the Dark Ages, characterized by a relative scarcity of historical records and cultural achievements compared to the preceding Roman era.
-                The fall of Rome also had geopolitical consequences. The former Western Roman territories were gradually transformed as various Germanic, Hunnic, and other tribes established their own kingdoms and polities. The Byzantine Empire, the Eastern Roman successor, continued to exist for several more centuries until the fall of Constantinople in 1453, preserving aspects of Roman culture and governance.
-                In summary, the fall of Rome had profound and multifaceted impacts, shaping the course of European history and laying the groundwork for the medieval period. While it marked the end of one era, it also set the stage for the emergence of new political, economic, and cultural paradigms in the Western world.
-            </p>
-        </section>
-
-        <section id="conclusion">
-            <h2>Conclusion</h2>
-            <p>
-                The fall of Rome stands as a pivotal moment in history, signifying the end of an era and ushering in a period of profound transformation across various facets of Western civilization. This multifaceted event, influenced by internal strife, external invasions, economic decline, and shifting cultural paradigms, resulted in the disintegration of the once-mighty Western Roman Empire. The immediate aftermath witnessed the fragmentation of political power, economic upheaval, and significant social changes, giving rise to feudalism and contributing to the onset of the Dark Ages. Culturally, the fall of Rome marked a transition from the classical achievements of antiquity to a more localized and agrarian society. Despite the challenges, the legacy of Rome endured through the preservation of knowledge by medieval scholars and the enduring influence of Christianity. The geopolitical landscape also underwent a profound transformation as former Roman territories gave rise to new kingdoms and political entities. In reflecting on the fall of Rome, one recognizes its enduring impact on shaping the course of European history and laying the foundation for subsequent historical epochs.
-            </p>
-        </section>
-
-        <section id="photos">
-            <h2>Photos</h2>
-            <img id="img1" src="https://image.jimcdn.com/app/cms/image/transf/dimension=1040x10000:format=jpg/path/s2217cd0bb1220415/image/i28b259dae72375e6/version/1684705709/when-did-rome-really-fall.jpg">
-            <img id="img2" src="data:image/jpeg;base64,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">
-        </section>
-    </main>
 
     <footer>
         <p>&copy; By Karma Namgay</p>
